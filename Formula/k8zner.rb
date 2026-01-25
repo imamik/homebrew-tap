@@ -11,7 +11,7 @@ class K8zner < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/imamik/k8zner/releases/download/v0.1.0/k8zner_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "c912f0a28d6b551c8b8d69be3d4f31aeb07ea59b82588e8065f6ced33a4b4939"
+      sha256 "fd58550db4e87cc00a4eaf2cc2f109118f4a65d8cc06d559fbee50db46c5eb20"
 
       def install
         bin.install "k8zner"
@@ -22,7 +22,7 @@ class K8zner < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/imamik/k8zner/releases/download/v0.1.0/k8zner_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "182fa72b369748d39471b8fa489e17a848b317621a448b843b2918930a32e9b1"
+      sha256 "ebf644b4e35d5b05b6e524eb389a30784d0eade8046e9a92e89328e0dd2a57eb"
 
       def install
         bin.install "k8zner"
@@ -36,7 +36,7 @@ class K8zner < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/imamik/k8zner/releases/download/v0.1.0/k8zner_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "c93ead01f73ff1416f015f686484c80c090959ea9260c651f8b68ac44dba87e3"
+      sha256 "80988e823126094940a046038542f545012d53f1348af9ce09bf8eed00c280d1"
       def install
         bin.install "k8zner"
 
@@ -46,7 +46,7 @@ class K8zner < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/imamik/k8zner/releases/download/v0.1.0/k8zner_0.1.0_Linux_arm64.tar.gz"
-      sha256 "74d0218c5f4fa62c7a74e31e1cceb5134ccc6b08799e580812318a51e89cafed"
+      sha256 "324a6a775497d3ec7787d09aaed6b106f66bc3d9a5f5783ca381ebb7233775fa"
       def install
         bin.install "k8zner"
 
