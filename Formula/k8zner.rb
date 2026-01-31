@@ -5,13 +5,13 @@
 class K8zner < Formula
   desc "Production-ready Kubernetes clusters on Hetzner Cloud using Talos Linux"
   homepage "https://github.com/imamik/k8zner"
-  version "0.5.0"
+  version "0.6.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/imamik/k8zner/releases/download/v0.5.0/k8zner_0.5.0_Darwin_x86_64.tar.gz"
-      sha256 "4e6abdde82c873d4361748f88e309260b86fad839a442a20d75d425ed123a17f"
+      url "https://github.com/imamik/k8zner/releases/download/v0.6.0/k8zner_0.6.0_Darwin_x86_64.tar.gz"
+      sha256 "e7ded7ea567c73ff2c77701ee469e83bcf67c50b8ddcfe90a1e17be8731ec1aa"
 
       def install
         bin.install "k8zner"
@@ -21,8 +21,8 @@ class K8zner < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/imamik/k8zner/releases/download/v0.5.0/k8zner_0.5.0_Darwin_arm64.tar.gz"
-      sha256 "8bff5b0b1b16230be3fccd69250660d9ebfcf743003cc0ec52fb720ff88d1e68"
+      url "https://github.com/imamik/k8zner/releases/download/v0.6.0/k8zner_0.6.0_Darwin_arm64.tar.gz"
+      sha256 "093fbfed22f9470b6b59efcdd052ba8ba46047eb97e2b7f407d976ca87c69982"
 
       def install
         bin.install "k8zner"
@@ -35,8 +35,8 @@ class K8zner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imamik/k8zner/releases/download/v0.5.0/k8zner_0.5.0_Linux_x86_64.tar.gz"
-      sha256 "124c5cd790616efd063f77ef442f3cc7bf7f8640267d7959025b9fc97beb451f"
+      url "https://github.com/imamik/k8zner/releases/download/v0.6.0/k8zner_0.6.0_Linux_x86_64.tar.gz"
+      sha256 "62002f579f14055331a056259655882c0a0b50ecf43456fc9b0f780dd15a10da"
       def install
         bin.install "k8zner"
 
@@ -45,8 +45,8 @@ class K8zner < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imamik/k8zner/releases/download/v0.5.0/k8zner_0.5.0_Linux_arm64.tar.gz"
-      sha256 "7d2d7d00d2cea414a6da30ad91507800da49f56d64eae43682aff4a97e4a9193"
+      url "https://github.com/imamik/k8zner/releases/download/v0.6.0/k8zner_0.6.0_Linux_arm64.tar.gz"
+      sha256 "8790f0fe25ba02cd100e892828bb3c5a6b94c653656cda45d447de9ccd85e52e"
       def install
         bin.install "k8zner"
 
