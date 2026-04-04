@@ -5,15 +5,15 @@
 class K8zner < Formula
   desc "Production-ready Kubernetes clusters on Hetzner Cloud using Talos Linux"
   homepage "https://github.com/imamik/k8zner"
-  version "0.9.2"
+  version "0.9.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/imamik/k8zner/releases/download/v0.9.2/k8zner_0.9.2_Darwin_x86_64.tar.gz"
-      sha256 "1311e13735c9047503b7c9c441e91c0a8dd5e36ecfeea82658e082cbcc1b2bf4"
+      url "https://github.com/imamik/k8zner/releases/download/v0.9.3/k8zner_0.9.3_Darwin_x86_64.tar.gz"
+      sha256 "946bd9726aefaccafe9fde1651067c0ac085ab5a56ecb254782a818398abc147"
 
-      def install
+      define_method(:install) do
         bin.install "k8zner"
 
         # Install shell completions
@@ -21,10 +21,10 @@ class K8zner < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/imamik/k8zner/releases/download/v0.9.2/k8zner_0.9.2_Darwin_arm64.tar.gz"
-      sha256 "8f13eea6e20e2e6d3a8ca0ae9db1a64fbc335cf02858ad5c6831399104fe3aae"
+      url "https://github.com/imamik/k8zner/releases/download/v0.9.3/k8zner_0.9.3_Darwin_arm64.tar.gz"
+      sha256 "e81d959d2103274ffdbb686164ae3fd654569dbc77628b84085660171804d59d"
 
-      def install
+      define_method(:install) do
         bin.install "k8zner"
 
         # Install shell completions
@@ -35,9 +35,9 @@ class K8zner < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imamik/k8zner/releases/download/v0.9.2/k8zner_0.9.2_Linux_x86_64.tar.gz"
-      sha256 "7fb18c54257a7c3833327191cf93f18dbeb0ad1141c8ce97b1681e1407a2cfc5"
-      def install
+      url "https://github.com/imamik/k8zner/releases/download/v0.9.3/k8zner_0.9.3_Linux_x86_64.tar.gz"
+      sha256 "5827737e08d6550c3c4583acc179ce766462aaf72a47d10f64060ed76d1729f3"
+      define_method(:install) do
         bin.install "k8zner"
 
         # Install shell completions
@@ -45,9 +45,9 @@ class K8zner < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/imamik/k8zner/releases/download/v0.9.2/k8zner_0.9.2_Linux_arm64.tar.gz"
-      sha256 "a4fe6361cf1369c1372718187b3763f13ddbb7f5937995e3ec6584d3c321cdd7"
-      def install
+      url "https://github.com/imamik/k8zner/releases/download/v0.9.3/k8zner_0.9.3_Linux_arm64.tar.gz"
+      sha256 "6854b2564c10b06c1f44b5490b9ae63399a15d61c5c0f38831f0a21402ccd907"
+      define_method(:install) do
         bin.install "k8zner"
 
         # Install shell completions
